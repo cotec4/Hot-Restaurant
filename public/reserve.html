@@ -15,33 +15,42 @@
 </head>
 
 <body>
-
     <header>
         <div class="jumbotron container">
             <h1 class="display-4"> <i class="fas fa-fire-alt"></i> Hot Restaurant</h1>
             <p class="lead"></p>
             <hr class="my-4">
-            <p>Book your seat before they are all gone!</p>
+            <p>Make your reservation</p>
             <a class="btn btn-primary btn-lg" href="./tables.html" role="button"> <i class="fas fa-table"></i> View Tables</a>
-            <a class="btn btn-primary btn-lg" href="./reserve.html" role="button"> <i class="far fa-credit-card"></i> Make Reservation</a>
+            <a class="btn btn-light btn-lg" href="./home.html" role="button"> <i class="fas fa-home"></i></a>
         </div>
     </header>
-    <form>
-        <div class="form-group">
-          <label for="inputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="card container" style="width: 1110px;">
+        <div class="card-header">
+            Table Reservation
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+       
+        <form>
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="input" class="form-control" id="inputName" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="inputPhoneNumber">Phone Number</label>
+                <input type="input" class="form-control" id="inputPhoneNumber" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="form-group">
+                <label  for="uniqueID1">Unique ID</label>
+                <input type="input" class="form-control" id="uniqueID">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 
 
 </body>
