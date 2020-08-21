@@ -16,52 +16,58 @@
 
 <body>
     <header>
-        <div class="jumbotron container">
-            <h1 class="display-4"> <i class="fas fa-fire-alt"></i> Hot Restaurant</h1>
-            <p class="lead"></p>
-            <hr class="my-4">
-            <p>Book your seat before they are all gone!</p>
-            <a class="btn btn-primary btn-lg" href="./tables.html" role="button"> <i class="fas fa-table"></i> View Tables</a>
-            <a class="btn btn-primary btn-lg" href="./reserve.html" role="button"> <i class="far fa-credit-card"></i> Make Reservation</a>
-        </div>
-    </header>
-    <div class="card" style="width: 18rem;">
-        <div class="card-header">
-            Featured
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+        <header>
+            <div class="jumbotron container">
+                <h1 class="display-4 text-center"> <i class="fas fa-fire-alt"></i> Hot Restaurant</h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <h2 class="text-center">Make your reservation</h2>
+                <div class="text-center">
+                <a class="btn btn-primary btn-lg" href="./tables.html" role="button"> <i class="fas fa-table"></i> View Tables</a>
+                <a class="btn btn-light btn-lg" href="./home.html" role="button"> <i class="fas fa-home"></i></a>
+                </div>
+            </div>
+        </header>
+     
+    <div class="card container" style="width: 1120px;">
+        <div class="card">
+            <div class="card-header">
+              Table Reservation
+            </div>
+            <div class="card-body">
+              <ul id="tableList" class="list-group"></ul>
+            </div>
+          </div>
+       
         <form>
             <div class="form-group">
-                <label for="inputName">Please enter your name here</label>
+                <label for="inputName">Name</label>
                 <input type="input" class="form-control" id="inputName" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
-                <label for="inputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+                <label for="inputPhoneNumber">Phone Number</label>
+                <input type="input" class="form-control" id="inputPhoneNumber" aria-describedby="emailHelp">
+              
             </div>
             <div class="form-group">
-                <label for="inputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label  for="uniqueID1">Unique ID</label>
+                <input type="input" class="form-control" id="uniqueID">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        
     </div>
+    <footer class="footer">
+        <div class="container">
+          <p>
+            <a href="/api/tables">API Table Link</a> |
+            <a href="/api/waitlist">API Wait List</a>
+        </div>
+      </footer>
 
 
 </body>
