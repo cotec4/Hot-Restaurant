@@ -16,19 +16,28 @@
 
 <body>
     <header>
-        <div class="jumbotron container">
-            <h1 class="display-4"> <i class="fas fa-fire-alt"></i> Hot Restaurant</h1>
-            <p class="lead"></p>
-            <hr class="my-4">
-            <p>Make your reservation</p>
-            <a class="btn btn-primary btn-lg" href="./tables.html" role="button"> <i class="fas fa-table"></i> View Tables</a>
-            <a class="btn btn-light btn-lg" href="./home.html" role="button"> <i class="fas fa-home"></i></a>
-        </div>
-    </header>
-    <div class="card container" style="width: 1110px;">
-        <div class="card-header">
-            Table Reservation
-        </div>
+        <header>
+            <div class="jumbotron container">
+                <h1 class="display-4 text-center"> <i class="fas fa-fire-alt"></i> Hot Restaurant</h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <h2 class="text-center">Make your reservation</h2>
+                <div class="text-center">
+                <a class="btn btn-primary btn-lg" href="./tables.html" role="button"> <i class="fas fa-table"></i> View Tables</a>
+                <a class="btn btn-light btn-lg" href="./home.html" role="button"> <i class="fas fa-home"></i></a>
+                </div>
+            </div>
+        </header>
+     
+    <div class="card container" style="width: 1120px;">
+        <div class="card">
+            <div class="card-header">
+              Table Reservation
+            </div>
+            <div class="card-body">
+              <ul id="tableList" class="list-group"></ul>
+            </div>
+          </div>
        
         <form>
             <div class="form-group">
@@ -50,7 +59,15 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        
     </div>
+    <footer class="footer">
+        <div class="container">
+          <p>
+            <a href="/api/tables">API Table Link</a> |
+            <a href="/api/waitlist">API Wait List</a>
+        </div>
+      </footer>
 
 
 </body>
